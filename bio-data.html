@@ -3,149 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio-Data</title>
-    <script src="script.js"></script>
-
+    <title>Biodata</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f9fc;
+            background-color: #f4f4f4;
             color: #333;
         }
-        .container {
-            max-width: 700px;
-            margin: 40px auto;
-            background: #ffffff;
-            padding: 25px 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        }
-        h1 {
+        header {
+            background-color: #221623;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            font-size: 2em;
-            color: #2c3e50;
-            margin-bottom: 20px;
         }
         table {
-            width: 100%;
+            width: 80%;
+            margin: 20px auto;
             border-collapse: collapse;
-            margin-bottom: 20px;
+            background-color: #f0f0f0;
         }
         th, td {
+            border: 1px solid #333;
             padding: 10px;
             text-align: left;
         }
         th {
-            background-color: #2c3e50;
+            background-color: #f2ecf1;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2d1d2c;
             color: #fff;
-            font-weight: bold;
-            font-size: 1em;
-        }
-        td {
-            background-color: #ecf0f1;
-            font-size: 0.95em;
-            color: #2c3e50;
-        }
-        .declaration {
-            margin-top: 20px;
-        }
-        .declaration h3 {
-            font-size: 1.2em;
-            color: #34495e;
-            margin-bottom: 10px;
-        }
-        .footer {
-            text-align: right;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #7f8c8d;
         }
     </style>
 </head>
 <body>
-    <header id="main-header">
-        <h1>Welcome to My Professional Portfolio</h1>
+    <header>
+        <h1>My Biodata</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="bio-data.html">Bio-data</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="biodata.html">Bio Data</a>
         </nav>
     </header>
-
-    <div class="container">
-        <h1>Bio-Data</h1>
-
-        <!-- Personal Information -->
+    <main>
         <table>
             <tr>
                 <th colspan="2">Personal Information</th>
             </tr>
             <tr>
-                <td><strong>Name</strong></td>
-                <td>Aastha Sharma</td>
+                <td>Name</td>
+                <td>Diya Dadheech</td>
             </tr>
             <tr>
-                <td><strong>Date of Birth</strong></td>
-                <td>18/12/2004</td>
+                <td>Date of Birth</td>
+                <td>November 5, 2003</td>
             </tr>
             <tr>
-                <td><strong>Gender</strong></td>
+                <td>Gender</td>
                 <td>Female</td>
             </tr>
             <tr>
-                <td><strong>Nationality</strong></td>
+                <td>Nationality</td>
                 <td>Indian</td>
             </tr>
             <tr>
-                <td><strong>Contact</strong></td>
-                <td>+91-7876667249</td>
+                <td>Contact</td>
+                <td>dida22cse@cmrit.ac.in</td>
             </tr>
             <tr>
-                <td><strong>Email</strong></td>
-                <td>aash22cse@cmrit.ac.in</td>
+                <th colspan="2">Education</th>
             </tr>
             <tr>
-                <td><strong>Address</strong></td>
-                <td>CMR Institute of Technology, Aecs Layout, Bengaluru, Karnataka, 560037</td>
+                <td>High School</td>
+                <td>KMC Public School</td>
+            </tr>
+            <tr>
+                <td>Year of Graduation</td>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td>College</td>
+                <td>CMR Institute Of Technolofy</td>
+            </tr>
+            <tr>
+                <td>Degree</td>
+                <td>Bachelor of Science in Computer Science</td>
+            </tr>
+            <tr>
+                <td>Year of Graduation</td>
+                <td>2026</td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">Skills</th>
+            </tr>
+            <tr>
+                <td>Programming Languages</td>
+                <td>Python, Java, JavaScript</td>
+            </tr>
+            <tr>
+                <td>Frameworks</td>
+                <td>React, Angular, Django</td>
+            </tr>
+            <tr>
+                <td>Tools</td>
+                <td>Git</td>
+            </tr>
+            <tr>
+                <th colspan="2">Hobbies</th>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>Reading, Traveling</td>
             </tr>
         </table>
-
-        <!-- Educational Qualifications -->
-        <table>
-            <tr>
-                <th colspan="2">Educational Qualifications</th>
-            </tr>
-            <tr>
-                <td><strong>B.E (CSE)</strong></td>
-                <td>CMR Institute of Technology, 2022-2026, 9.0 CGPA</td>
-            </tr>
-            <tr>
-                <td><strong>Class 12</strong></td>
-                <td>NTR PU College, 2022, 92.5%</td>
-            </tr>
-            <tr>
-                <td><strong>Class 10</strong></td>
-                <td>Stepping Stone School, 2020, 92.5%</td>
-            </tr>
-        </table>
-
-        <!-- Declaration -->
-        <div class="declaration">
-            <h3>Declaration</h3>
-            <p>
-                I hereby declare that the above information is true and correct to the best of my knowledge.
-            </p>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <p><strong>Date:</strong> 24/11/2024</p>
-            <p><strong>Place:</strong>Bangalore</p>
-        </div>
-    </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Diya Dadheech</p>
+    </footer>
 </body>
 </html>
