@@ -1,38 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume Website</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .close-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .close-btn:hover {
+            background: #e53935;
+        }
+    </style>
 </head>
 <body>
-  <header id="main-header">
-    <h1>Welcome to My Professional Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="bio-data.html">Bio-data</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="biodata.html">Bio Data</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome!</h2>
+        <p>This is my personal website showcasing my resume and bio data.</p>
+        <button id="popupButton">More Info</button>
+    </main>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>About This Website</h3>
+            <p>Welcome to My Personal Website!
+Explore my portfolio, resume, and bio data to learn more about my skills, projects, and achievements. This site is a showcase of my journey, passion, and dedication in the field of Computer Science and Engineering. Feel free to navigate through the pages and discover what I have to offer.
 
-  <section class="intro">
-    <h2>About Me</h2>
-    <p>Hello, I am Aastha, a Computer Science Engineering student passionate about coding, technology, and learning new things. This is an introduction to my portfolio.</p>
+Thank you for visiting!
 
-    <span id="moreContent" style="display: none;">
-      <p>I enjoy solving complex problems and am constantly exploring new areas in software development, artificial intelligence, and web development.</p>
-      <p>Throughout my academic journey, I have been involved in various projects that have helped me develop practical skills in programming, problem-solving, and teamwork. I am always eager to learn and grow in the ever-evolving tech industry.</p>
-    </span>
-    <button onclick="document.getElementById('moreContent').style.display = 'block'; this.style.display = 'none';">Read More</button>
-  </section>
+</p>
+            <button class="close-btn" id="closePopup">Close</button>
+        </div>
+    </div>
+    <footer>© 2024 My Website</footer>
 
-  <footer>
-    <p>&copy; 2024 Aastha's Portfolio. All Rights Reserved.</p>
-  </footer>
+    <script>
+        // Popup functionality
+        const popup = document.getElementById('popup');
+        const popupButton = document.getElementById('popupButton');
+        const closePopup = document.getElementById('closePopup');
 
+        popupButton.addEventListener('click', () => {
+            popup.style.display = 'flex';
+        });
+
+        closePopup.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
