@@ -2,54 +2,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
-  }
-  
-  header {
+}
+
+header {
     background: #333;
     color: white;
     padding: 10px;
     text-align: center;
-  }
-  
-  header nav ul {
+}
+
+header nav ul {
     list-style: none;
-  }
-  
-  header nav ul li {
+}
+
+header nav ul li {
     display: inline;
     margin: 0 10px;
-  }
-  
-  header nav ul li a {
+}
+
+header nav ul li a {
     color: white;
     text-decoration: none;
-  }
-  
-  section {
+}
+
+section {
     padding: 20px;
     margin: 20px;
     background-color: white;
     border-radius: 8px;
-  }
-  
-  footer {
+}
+
+footer {
     text-align: center;
     padding: 10px;
     background: #333;
     color: white;
-  }
-  
-  ul {
+}
+
+ul {
     list-style-type: none;
-  }
-  
-  h1, h2 {
+}
+
+h1, h2 {
     color: #333;
-  }
-  
+}
