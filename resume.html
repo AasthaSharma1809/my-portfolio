@@ -1,132 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <script src="script.js"></script>
-
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
+            background-color: #f4f4f9;
+            color: #0c090c;
         }
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 20px auto;
             background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(123, 174, 232, 0.916);
         }
-        header {
+        h1, h2 {
             text-align: center;
-            margin-bottom: 20px;
+            color: #444;
         }
-        header h1 {
-            margin: 0;
-            color: #0078d7;
-            font-size: 2.5em;
-        }
-        header p {
-            font-size: 1.2em;
-            margin: 5px 0;
-            color: #555;
-        }
-        section {
-            margin-bottom: 25px;
-        }
-        section h2 {
-            color: #0078d7;
-            font-size: 1.8em;
-            border-bottom: 2px solid #0078d7;
+        h2 {
+            margin-top: 20px;
+            border-bottom: 2px solid #efc0c0;
             padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        .content-block {
-            margin-bottom: 15px;
-        }
-        .content-block h3 {
-            margin: 0;
-            color: #333;
-            font-size: 1.4em;
-        }
-        .content-block p {
-            margin: 5px 0;
-            color: #555;
         }
         ul {
-            margin: 0;
-            padding-left: 20px;
+            list-style: none;
+            padding: 0;
         }
         ul li {
-            font-size: 1.1em;
-            margin-bottom: 8px;
+            padding: 5px 0;
         }
-        .info-table {
+        .section {
+            margin: 20px 0;
+        }
+        .section table {
             width: 100%;
             border-collapse: collapse;
         }
-        .info-table th,
-        .info-table td {
-            text-align: left;
-            padding: 10px;
-            border: 1px solid #ddd;
+        .section table, .section th, .section td {
+            border: 1px solid #d1a8f9;
         }
-        .info-table th {
-            background-color: #0078d7;
-            color: #fff;
+        .section th, .section td {
+            padding: 10px;
+            text-align: left;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 500px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .popup-content h3 {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .popup-content p {
+            margin: 0;
+            margin-bottom: 15px;
+        }
+        .close-btn {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .close-btn:hover {
+            background: #e53935;
         }
         footer {
             text-align: center;
-            font-size: 0.9em;
-            color: #777;
             margin-top: 20px;
-            padding-top: 10px;
-            border-top: 1px solid #ddd;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <header id="main-header">
-        <h1>Aastha Sharma</h1>
-        <p>Email: aash22cse@cmrit.ac.in | Phone: +91-7876667249</p>
+    <header>
+        <h1>My Resume</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="resume.html">Resume</a>
             <a href="biodata.html">Bio Data</a>
-        </nav>
+        </nav>
     </header>
-
     <div class="container">
-        <!-- Objective -->
-        <section>
-            <h2>Objective</h2>
-            <p>
-                Aspiring computer science student eager to leverage technical and creative skills in developing 
-                innovative solutions while contributing to impactful projects in a dynamic environment.
-            </p>
+        <h1>Resume</h1>
+        <section class="section">
+            <h2>Personal Details</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>Diya Dadheech</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>dida22cse@cmrit.ac.in</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+91-9610760019</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>CMR Institute Of Technology</td>
+                </tr>
+            </table>
         </section>
 
-        <!-- Skills -->
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: Python, C++, Java</li>
-                <li>Web Development: HTML, CSS</li>
-                <li>Database Management: MySQL, MongoDB</li>
-                <li>Tools: Visual Studio Code</li>
-                <li>Soft Skills: Teamwork, Problem-solving, Communication</li>
-            </ul>
-        </section>
-
-        <!-- Education -->
-        <section>
+        <section class="section">
             <h2>Education</h2>
-            <table class="info-table">
+            <table>
                 <tr>
                     <th>Degree</th>
                     <th>Institution</th>
@@ -134,47 +150,85 @@
                     <th>Percentage/CGPA</th>
                 </tr>
                 <tr>
-                    <td>B.E (CSE)</td>
+                    <td>B.Tech in Computer Science</td>
                     <td>CMR Institute of Technology</td>
                     <td>2022-2026</td>
-                    <td>9.0 CGPA</td>
+                    <td>8.9 CGPA</td>
                 </tr>
                 <tr>
-                    <td>Class 12</td>
-                    <td>NTR PU College</td>
-                    <td>2022</td>
-                    <td>92.5%</td>
+                    <td>12th Grade</td>
+                    <td>KMC Public School</td>
+                    <td>2021</td>
+                    <td>95%</td>
                 </tr>
                 <tr>
-                    <td>Class 10</td>
-                    <td>Stepping Stone School</td>
-                    <td>2020</td>
-                    <td>92.5%</td>
+                    <td>10th Grade</td>
+                    <td>KMC Public School</td>
+                    <td>2019</td>
+                    <td>90%</td>
                 </tr>
             </table>
         </section>
 
-        <!-- Projects -->
-        <section>
-            <h2>Projects</h2>
-            <div class="content-block">
-                <h3>Pet-Store Management System</h3>
-                <p>
-                    Built a Python-based system to automate Pet-Store management tasks, including store inventory and user history.
-                </p>
-            </div>
-            <div class="content-block">
-                <h3>Portfolio Website</h3>
-                <p>
-                    Designed a responsive portfolio using HTML, CSS, and JavaScript to showcase projects and skills.
-                </p>
-            </div>
+        <section class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, C, Java</li>
+                <li>Web Development: HTML, CSS</li>
+                <li>Database Management: MySQL, MongoDB</li>
+                <li>Tools: VS Code</li>
+            </ul>
         </section>
 
-        <!-- Footer -->
-        <footer>
-            &copy; 2024 Aastha Sharma | All Rights Reserved
-        </footer>
+        <section class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Pet Store Management System:</strong> Developed an e-commerce web app using CSS and MongoDB.
+                </li>
+            </ul>
+            <button id="moreInfoBtn">More Info</button>
+        </section>
+
+        <section class="section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Reading books</li>
+                <li>Traveling</li>
+            </ul>
+        </section>
     </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>About This Project</h3>
+            <p>
+                The Pet Store Management System is a comprehensive project that allows users to manage product inventory, view sales statistics, and make online purchases.
+            </p>
+            <button class="close-btn" id="closeBtn">Close</button>
+        </div>
+    </div>
+
+    <footer>© 2024 Diya Dadheech</footer>
+
+    <script>
+        const moreInfoBtn = document.getElementById("moreInfoBtn");
+        const popup = document.getElementById("popup");
+        const closeBtn = document.getElementById("closeBtn");
+
+        moreInfoBtn.addEventListener("click", () => {
+            popup.style.display = "flex";
+        });
+
+        closeBtn.addEventListener("click", () => {
+            popup.style.display = "none";
+        });
+
+        window.addEventListener("click", (event) => {
+            if (event.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>
